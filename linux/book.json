@@ -8,11 +8,5 @@
         "sidebar": {
             "博客主页": "http://www.zlma.club"
         }
-    },
-	"plugins": ["github"],
-	"pluginsConfig": {
-		"github": {
-			"url": "https://github.com/Beiyansee"
-		}
-	}
+    }
 }
