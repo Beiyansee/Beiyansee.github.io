@@ -4,10 +4,5 @@
     "description": "linux学习记录",
     "generator": "site",
 	"language": "zh-hans",
-	 "keywords": "Linux, 学习笔记, markdown, gitbook",
-    "introduction": { "path": "README.md", "title": "学习就是踽踽前行" },
-    "plugins": [ "mathjax", "disqus" ],
-    "pluginsConfig": { "fontSettings": { "theme": "white", "family": "serif", "size": 2 }, "mathjax":{ "forceSVG": true }, "disqus": { "shortName": "roachsinai" } },
-    "links": { "home": false, "about": false, "issues": false, "contribute": false, "sidebar": {"博客主页": "http://www.zlma.club"}, "tail": { "linux学习记录": "https://beiyansee.github.io/linux/" }, "gitbook": false, "sharing": { "google" : true, "facebook" : true, "twitter" : true, "weibo" : true, "qq" : true, "qrcode" : true } },
-    "pdf": { "toc": true, "pageNumbers": true, "fontSize": 12, "paperSize": "a4", "margin": { "right": 62, "left": 62, "top": 36, "bottom": 36 } } 
+	"links": {"sidebar": {"博客主页": "http://www.zlma.club"}}
 }
