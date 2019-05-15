@@ -3,9 +3,16 @@
     "author": "Mr.zhou",
     "description": "linux学习记录",
     "generator": "site",
+	"language": "zh-hans",
     "links": {
         "sidebar": {
-            "生命不息 折腾不止": "http://www.zlma.club"
+            "博客主页": "http://www.zlma.club"
         }
-    }
+    },
+	"plugins": ["github"],
+	"pluginsConfig": {
+		"github": {
+			"url": "https://github.com/Beiyansee"
+		}
+	}
 }
