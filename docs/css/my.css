@@ -1,3 +1,34 @@
 body {
-    overflow: auto !important;
+    overflow-y: auto !important;
+	overflow-x: hidden !important;
+}
+
+#head-img{
+	margin: 5px auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #dbdbdb;
+    box-shadow: 0 0 4px #ccc;
+	animation: myfirst 2s infinite;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#head-img img{
+	width: 100%;
+    min-height: 100%;
+    transition: all 0.5s;
+}
+
+@keyframes myfirst {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, -10px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
 }
