@@ -1,14 +1,15 @@
-<div class="cover-main"><div id="head-img"><img width="130px" src="img/icon.png"></div>
-<h1 id="toBeTopJavaer"><a><span>Java程序员进阶</span></a></h1>
+<div class="cover-main">
+<div id="head-img"><img width="130px" src="img/icon.png"></div>
+<div id="page-title">Java程序员进阶</div>
 
 
 ![](https://img.shields.io/badge/version-v1.0.0-green.svg) ![](https://img.shields.io/badge/author-Mr.zhou-yellow.svg) ![](https://img.shields.io/badge/license-GPL-blue.svg)
 
 <span id="busuanzi_container_site_pv" style="display: inline;">
-    👁️本页总访问次数:<span id="busuanzi_value_site_pv"></span> 
+    👁️&nbsp;本页总访问次数&nbsp;&nbsp;:&nbsp;&nbsp;<span id="busuanzi_value_site_pv"></span> 
 </span>
 <span id="busuanzi_container_site_uv" style="display: inline;"> 
-    | 🧑总访客数: <span id="busuanzi_value_site_uv"></span>
+   &nbsp;&nbsp; | &nbsp;&nbsp;🧑&nbsp;总访客数&nbsp;&nbsp;:&nbsp;&nbsp;<span id="busuanzi_value_site_uv"></span>
 </span>
 
 [Gitee](https://gitee.com/zhouliuming/zhouliuming.git)
@@ -19,7 +20,6 @@
 ![](img/bg.png)
 -->
 
-<!-- 背景色
-![color](#292838)
-
- -->
+<!-- 背景色 -->
+![color](#333333)
+ 
