@@ -1,4 +1,4 @@
-<img width="180px" src="img/icon.png">
+<img width="180px" src="https://zhouliuming.github.io/img/icon.png">
 
 <h1>Java程序员进阶</h1>
 
