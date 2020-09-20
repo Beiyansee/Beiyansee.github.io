@@ -2,7 +2,6 @@
 <div id="head-img"><img width="130px" src="img/icon.png"></div>
 <div id="page-title">Java程序员进阶</div>
 
-
 ![](https://img.shields.io/badge/version-v1.0.0-green.svg) ![](https://img.shields.io/badge/author-Mr.zhou-yellow.svg) ![](https://img.shields.io/badge/license-GPL-blue.svg)
 
 <span id="busuanzi_container_site_pv" style="display: inline;">
@@ -14,10 +13,10 @@
 
 [Gitee](https://gitee.com/zhouliuming/zhouliuming.git)
 [Github](https://github.com/zhouliuming/zhouliuming.github.io.git)
-<a href="#/README">开始阅读</a></p></div><div class="mask"></div></section>
-
-
-<h3 id="alapi" style="color:#FFFFFF"></h3>
+<a href="#/README">开始阅读</a></p></div>
+<div class="mask">
+    <div id="alapi"></div>
+</div>
 
 
 <!-- 背景图片 

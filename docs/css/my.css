@@ -3,6 +3,10 @@ body {
 	overflow-x: hidden !important;
 }
 
+section{
+    color: #FFFFFF;
+}
+
 #page-title{
 	color: #FFFfff;
 	width:100%; 
@@ -49,4 +53,18 @@ body {
 
 #busuanzi_value_site_pv, #busuanzi_value_site_uv{
 	color:#daca0e;
+}
+
+#alapi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+#du{
+    font-weight: bold;
+    font-size: 1.2em;
+    height: 48px;
+    line-height: 48px;
 }

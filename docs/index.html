@@ -68,10 +68,10 @@
 	$(function(){
 		$.ajax({
 				type : "get",
-				url : "https://v1.alapi.cn/api/soul",
+				url : "https://du.shadiao.app/api.php",
 				success : function(data) {
 				console.log(data);
-					$("#alapi").html("心灵毒鸡汤:&nbsp;&nbsp;&nbsp;&nbsp;"+data.data.title);
+					$("#alapi").html("<div><img src='img/du.png'></div><div id='du'>"+data+"</div>");
 				}
 		});
 	})
