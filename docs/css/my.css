@@ -55,11 +55,23 @@ section{
 	color:#daca0e;
 }
 
+@keyframes fade-in
+{
+	0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+
 #alapi{
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;    
+    align-items: center; 
+}
+
+#alapi img{
+    width: 32px;
+    height: 32px;
 }
 
 #du{
@@ -67,4 +79,6 @@ section{
     font-size: 1.2em;
     height: 48px;
     line-height: 48px;
+    margin: 0 10px;
+    animation: fade-in 4s ease 0s 1;
 }

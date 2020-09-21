@@ -1,95 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Java程序员进阶</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
     <link rel="stylesheet" href="css/my.css">
-	<link rel="shortcut icon" href="img/icon.png">
+    <link rel="shortcut icon" href="img/icon.png">
 </head>
+
 <body>
-<div id="app"></div>
+    <div id="app"></div>
 
-<style type="text/css">
+    <style type="text/css">
+        body::-webkit-scrollbar {
+            width: 8px;
+            background-color: #eee;
+        }
 
-	body::-webkit-scrollbar {
-		width: 8px;
-		background-color: #eee;
-	}
+        body::-webkit-scrollbar-track {
+            background-color: #eee;
+        }
 
-	body::-webkit-scrollbar-track {
-		background-color: #eee;
-	}
+        body::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: #3DB6A4;
+        }
 
-	body::-webkit-scrollbar-thumb {
-		border-radius: 10px;
-		background: #3DB6A4;
-	}
+        .sidebar p.active {
+            border-right: 2px solid;
+            color: var(--theme-color, #42b983);
+            font-weight: 600;
+        }
+    </style>
 
-    .sidebar p.active{
-        border-right: 2px solid;
-        color: var(--theme-color,#42b983);
-        font-weight: 600;
-    }
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-</style>
+    <script>
+        window.$docsify = {
+            name: 'Java程序员进阶',
+            repo: 'https://github.com/zhouliuming/zhouliuming.github.io.git',
+            loadSidebar: true,
+            subMaxLevel: 3,
+            autoHeader: true,
+            search: {
+                paths: 'auto',
+                placeholder: '🔍 搜索 ',
+                noData: '哎呀，没有找到呀！ ',
+                // Headline depth, 1 - 6
+                depth: 3
+            },
+            copyCode: {
+                buttonText: '复制',
+                errorText: 'Error',
+                successText: 'OK!'
+            },
+            pagination: {
+                previousText: '上一章',
+                nextText: '下一章',
+            },
+            coverpage: true
+        }
 
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        $(function () {
+            getSoul()
+            //定时任务
+            setInterval("getSoul()", 5000);
+        })
 
-<script>
-    window.$docsify = {
-        name: 'Java程序员进阶',
-        repo: 'https://github.com/zhouliuming/zhouliuming.github.io.git',
-        loadSidebar: true,
-        subMaxLevel: 3,
-        autoHeader: true,
-        search: {
-            paths: 'auto',
-            placeholder: '🔍 搜索 ',
-            noData: '哎呀，没有找到呀！ ',
-            // Headline depth, 1 - 6
-            depth: 3
-        },
-        copyCode: {
-            buttonText : '复制',
-            errorText  : 'Error',
-            successText: 'OK!'
-        },
-        pagination: {
-            previousText: '上一章',
-            nextText: '下一章',
-        },
-        coverpage: true
-    }
-	
-	$(function(){
-		$.ajax({
-				type : "get",
-				url : "https://du.shadiao.app/api.php",
-				success : function(data) {
-				console.log(data);
-					$("#alapi").html("<div><img src='img/du.png'></div><div id='du'>"+data+"</div>");
-				}
-		});
-	})
-	
-</script>
-<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-<!--代码块复制插件-->
-<script src="//unpkg.com/docsify-copy-code"></script>
-<!-- 图片缩放插件 -->
-<script src="//cyc-1256109796.cos.ap-guangzhou.myqcloud.com/zoom-image.min.js"></script>
-<!--搜索插件-->
-<script src="//cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
-<!--语法高亮插件-->
-<script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
-<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
-<!--分页插件-->
-<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
-<!--统计访问量插件-->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        function getSoul() {
+            console.log("执行");
+            $.ajax({
+                type: "get",
+                dataType: "json",
+                url: "https://data.zhai78.com/openOneBad.php",
+                success: function (data) {
+                    console.log(data);
+                    if (data.txt != null) {
+                        $("#alapi").html("<div><img src='img/du.png'></div><div id='du'>" + data.txt + "</div>");
+                    }
+
+                }
+            });
+        }
+
+
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <!--代码块复制插件-->
+    <script src="//unpkg.com/docsify-copy-code"></script>
+    <!-- 图片缩放插件 -->
+    <script src="//cyc-1256109796.cos.ap-guangzhou.myqcloud.com/zoom-image.min.js"></script>
+    <!--搜索插件-->
+    <script src="//cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
+    <!--语法高亮插件-->
+    <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+    <!--分页插件-->
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <!--统计访问量插件-->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </body>
+
 </html>
