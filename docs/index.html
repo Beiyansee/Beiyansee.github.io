@@ -73,13 +73,11 @@
         })
 
         function getSoul() {
-            console.log("执行");
             $.ajax({
                 type: "get",
                 dataType: "json",
                 url: "https://data.zhai78.com/openOneBad.php",
                 success: function (data) {
-                    console.log(data);
                     if (data.txt != null) {
                         $("#alapi").html("<div><img src='img/du.png'></div><div id='du'>" + data.txt + "</div>");
                     }
@@ -87,8 +85,6 @@
                 }
             });
         }
-
-
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <!--代码块复制插件-->
