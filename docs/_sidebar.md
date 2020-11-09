@@ -1,4 +1,7 @@
 * 收集篇
+  * Java相关
+    * [Java基础](blog/Java基础.md)
+    * [Java集合容器](blog/Java集合容器.md)
   * Spring相关
     * [Spring](blog/Spring.md)
     * [SpringBoot](blog/SpringBoot.md)
