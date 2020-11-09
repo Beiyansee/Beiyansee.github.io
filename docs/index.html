@@ -11,11 +11,6 @@
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
     <link rel="stylesheet" href="css/my.css">
     <link rel="shortcut icon" href="img/icon.png">
-</head>
-
-<body>
-    <div id="app"></div>
-
     <style type="text/css">
         body::-webkit-scrollbar {
             width: 8px;
@@ -37,7 +32,12 @@
             font-weight: 600;
         }
     </style>
+</head>
 
+<body>
+    <div id="app"></div>
+    <a href="#" class="cd-top">TOP</a>
+</body>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script>
@@ -64,13 +64,13 @@
                 nextText: '下一章',
             },
             coverpage: true
-        }
+        };
 
         $(function () {
-            getSoul()
+            getSoul();
             //定时任务
             setInterval("getSoul()", 10000);
-        })
+        });
 
         function getSoul() {
             $.ajax({
@@ -84,6 +84,31 @@
 
                 }
             });
+        }
+        function backToTop() {
+            //Back to top
+            var offset = 300,
+                offset_opacity = 1200,
+                scroll_top_duration = 700,
+                $back_to_top = $('.cd-top');
+
+            //hide or show the "back to top" link
+            $(window).scroll(function(){
+                ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+                if( $(this).scrollTop() > offset_opacity ) {
+                    $back_to_top.addClass('cd-fade-out');
+                }
+            });
+
+            //smooth scroll to top
+            $back_to_top.on('click', function(event){
+                event.preventDefault();
+                $('body,html').animate({
+                        scrollTop: 0 ,
+                    }, scroll_top_duration
+                );
+            });
+
         }
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
@@ -100,6 +125,4 @@
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
     <!--统计访问量插件-->
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-</body>
-
 </html>
