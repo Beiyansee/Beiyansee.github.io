@@ -15,6 +15,9 @@
     * [Redis](blog/Redis.md)
   * 消息中间件
     * [消息中间件MQ与RabbitMQ](blog/消息中间件MQ与RabbitMQ.md)
+  * Linux相关
+    * [Linux命令](blog/Linux命令.md)
+    * [Shell脚本](blog/Shell脚本.md)
 * 实践篇
   * 前端相关
     * [时钟插件-CSS动画+jQuery](blog/时钟插件-CSS动画+jQuery.md)
