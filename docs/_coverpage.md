@@ -11,8 +11,8 @@
    &nbsp;&nbsp; | &nbsp;&nbsp;🧑&nbsp;总访客数&nbsp;&nbsp;:&nbsp;&nbsp;<span id="busuanzi_value_site_uv"></span>
 </span>
 
-[Gitee](https://gitee.com/zhouliuming/zhouliuming.git)
-[Github](https://github.com/zhouliuming/zhouliuming.github.io.git)
+[Gitee](https://gitee.com/only-zhou/zhouliuming)
+[Github](https://github.com/zlmbeiyan/zlmbeiyan.github.io)
 <a href="#/README">开始阅读</a></p></div>
 <div class="mask">
     <div id="alapi"></div>
