@@ -15,9 +15,9 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
         with:
           # 注意替换为你的 GitHub 源仓库地址
-          source-repo: git@github.com:zhouliuming/zhouliuming.github.io.git
+          source-repo: git@github.com:zlmbeiyan/zlmbeiyan.github.io.git
           # 注意替换为你的 Gitee 目标仓库地址
-          destination-repo: git@gitee.com:zhouliuming/zhouliuming.git
+          destination-repo: git@gitee.com:only-zhou/zhouliuming.git
 
       - name: Build Gitee Pages
         uses: yanglbme/gitee-pages-action@master
