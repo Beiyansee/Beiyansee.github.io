@@ -17,7 +17,7 @@ jobs:
           # 注意替换为你的 GitHub 源仓库地址
           source-repo: git@github.com:zlmbeiyan/zlmbeiyan.github.io.git
           # 注意替换为你的 Gitee 目标仓库地址
-          destination-repo: git@gitee.com:only-zhou/zhouliuming.git
+          destination-repo: git@gitee.com:only-zhou/only-zhou.git
 
       - name: Build Gitee Pages
         uses: yanglbme/gitee-pages-action@master
@@ -27,4 +27,4 @@ jobs:
           # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
           gitee-password: ${{ secrets.GITEE_PASSWORD }}
           # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
-          gitee-repo: only-zhou/zhouliuming
+          gitee-repo: only-zhou/only-zhou
