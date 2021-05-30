@@ -1,4 +1,4 @@
-<img width="180px" src="https://raw.githubusercontent.com/zlmbeiyan/zlmbeiyan.github.io/master/docs/img/icon.png">
+<img width="180px" src="/img/icon.png">
 
 <h1>Java程序员进阶</h1>
 
