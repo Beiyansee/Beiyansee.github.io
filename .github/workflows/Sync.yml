@@ -18,7 +18,6 @@ jobs:
           source-repo: git@github.com:zlmbeiyan/zlmbeiyan.github.io.git
           # 注意替换为你的 Gitee 目标仓库地址
           destination-repo: git@gitee.com:only-zhou/only-zhou.git
-          directory: docs
 
       - name: Build Gitee Pages
         uses: yanglbme/gitee-pages-action@master
